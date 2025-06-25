@@ -1,11 +1,30 @@
 {
   "name": "mcp-config-path",
-  "module": "src/index.ts",
+  "version": "0.1.0",
+  "description": "A utility for managing MCP client config path, such as Claude Desktop and code, Cline, Cursor",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "author": "milisp milisp@proton.me>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/milisp/mcp-config-path.git"
+  },
+  "keywords": [
+    "config",
+    "path",
+    "mcp",
+    "utility"
+  ],
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist",
+    "prepublishOnly": "bun run build"
   }
 }
