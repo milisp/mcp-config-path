@@ -1,0 +1,24 @@
+[project]
+name = "mcp-config-path"
+version = "0.1.2"
+description = "mcp client config path, such as Claude Desktop and code, Cline, Cursor"
+authors = [{name = "milisp", email = "milisp@proton.me"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+homepage = "https://github.com/milisp/mcp-config-path"
+
+[tool.setuptools]
+packages = ["mcp_config_path"]
+package-dir = {"" = "py"}
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+publish-url = "https://upload.pypi.org/legacy/"
